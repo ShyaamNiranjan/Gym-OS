@@ -1,0 +1,122 @@
+:root {
+  --forest: #0d2b1f;
+  --console: #123a29;
+  --signal: #7bc142;
+  --lime: #b6ff3c;
+  --canvas: #f7faf8;
+  --line: #d6e3db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--forest);
+  background: var(--canvas);
+}
+
+.shell {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--forest);
+  font-weight: 700;
+}
+
+nav a {
+  color: #35584a;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.hero {
+  padding: 3rem 0 2rem;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--console);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0.75rem 0 1rem;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--console);
+  color: var(--lime);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--console);
+  border-color: var(--line);
+}
+
+.card {
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+input {
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  padding: 0.68rem 0.8rem;
+}
+
+.direct {
+  margin-top: 1rem;
+  color: #3b5a4d;
+}
+
+.footer {
+  padding: 1rem 0 2rem;
+  color: #4d655b;
+  font-size: 0.92rem;
+}
+
+.footer a,
+.direct a {
+  color: var(--console);
+}
