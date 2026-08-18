@@ -406,6 +406,7 @@ a {
 }
 
 .contact-form {
+  position: relative;
   display: grid;
   gap: 0.75rem;
   margin-top: 1.5rem;
@@ -440,6 +441,15 @@ a {
 
 .contact-form .form-message.error {
   color: #b42318;
+}
+
+.contact-form .honey {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .direct-links {

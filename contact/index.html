@@ -41,7 +41,17 @@
             <p style="margin: 0.5rem 0 0; color: var(--muted)">
               Name, gym name, city, number of entrances and preferred demo time. Routes directly to YNIIDI.
             </p>
-            <form class="contact-form two-col" data-contact-form>
+            <form
+              class="contact-form two-col"
+              action="https://formsubmit.co/info@yniidi.com"
+              method="POST"
+              data-contact-form
+            >
+              <input type="hidden" name="_subject" value="GymOS demo request" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://gymos.yniidi.com/contact/?sent=1" />
+              <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" />
               <input required name="name" placeholder="Your name" />
               <input required name="gym_name" placeholder="Gym name" />
               <input required name="city" placeholder="City" />
