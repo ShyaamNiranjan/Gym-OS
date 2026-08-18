@@ -3,82 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YNIIDI GymOS</title>
+    <title>YNIIDI GymOS — Run your gym on one system</title>
     <meta
       name="description"
-      content="Run your gym on one system - memberships, payments and the front door."
+      content="GymOS handles memberships, payments and physical access control from a single dashboard — with QR and PIN entry your members already know how to use."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="shell header">
-      <a href="#" class="brand">YNIIDI GymOS</a>
-      <nav>
-        <a href="#product">Product</a>
-        <a href="#hardware">Hardware</a>
-        <a href="#security">Security</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header">
+      <div class="shell">
+        <a href="./" class="brand">
+          <span class="brand-mark">G</span>
+          YNIIDI GymOS
+        </a>
+        <nav class="site-nav">
+          <a href="./" class="active">Home</a>
+          <a href="./product/">Product</a>
+          <a href="./hardware/">Hardware</a>
+          <a href="./security/">Security</a>
+          <a href="./pricing/">Pricing</a>
+          <a href="./contact/">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="shell">
-      <section class="hero">
-        <p class="eyebrow">Gym operations, unified</p>
-        <h1>Run your gym on one system - memberships, payments and the front door.</h1>
-        <p>
-          GymOS handles membership sign-ups, renewals, payments and physical access control from a single dashboard,
-          with QR and PIN entry your members already know how to use.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#contact">Book a live demo</a>
-          <a class="btn btn-secondary" href="#pricing">See pricing</a>
+    <main class="page-main">
+      <section class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Gym operations, unified</p>
+          <h1>Run your gym on one system — memberships, payments and the front door.</h1>
+          <p class="lead">
+            GymOS handles membership sign-ups, renewals, payments and physical access control from a single dashboard
+            — with QR and PIN entry your members already know how to use.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="./contact/">Book a live demo</a>
+            <a class="btn btn-secondary" href="./pricing/">See pricing</a>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <p class="eyebrow">Proof</p>
+          <div class="proof-grid">
+            <div class="proof-item">Self-hosted, one-time deployment</div>
+            <div class="proof-item">QR + PIN access control</div>
+            <div class="proof-item">Razorpay payments built in</div>
+            <div class="proof-item">Live in under a week</div>
+          </div>
         </div>
       </section>
 
-      <section id="product" class="card">
-        <h2>Product</h2>
-        <p>Everything the front desk needs, in one screen.</p>
+      <section class="shell" style="padding-bottom: 1rem">
+        <div class="grid-2">
+          <article class="feature-card">
+            <div class="feature-head">
+              <span class="icon-badge">⌂</span>
+              <p class="feature-label">For your front desk</p>
+            </div>
+            <h2>One operations console</h2>
+            <p>Members, memberships, plans, payments and attendance — all in the same place, no spreadsheets.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-head">
+              <span class="icon-badge">◉</span>
+              <p class="feature-label">For your members</p>
+            </div>
+            <h2>A portal of their own</h2>
+            <p>Members see their plan, visit history and entry pass without calling the front desk.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-head">
+              <span class="icon-badge">⎋</span>
+              <p class="feature-label">For your door</p>
+            </div>
+            <h2>Real access control</h2>
+            <p>
+              QR and PIN entry — with or without physical hardware, so you can start today and add a controlled door
+              later.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-head">
+              <span class="icon-badge">✓</span>
+              <p class="feature-label">For your peace of mind</p>
+            </div>
+            <h2>Bank-grade security</h2>
+            <p>Every admin action is logged. Sessions are hardened. Nothing happens without a trace.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="hardware" class="card">
-        <h2>Hardware & Access Control</h2>
-        <p>The door, actually controlled.</p>
-      </section>
-
-      <section id="security" class="card">
-        <h2>Security & Trust</h2>
-        <p>Every action, accounted for.</p>
-      </section>
-
-      <section id="pricing" class="card">
-        <h2>Pricing</h2>
-        <p>One deployment. No monthly bill.</p>
-      </section>
-
-      <section id="contact" class="card">
-        <h2>Book a demo</h2>
-        <form action="https://formsubmit.co/info@yniidi.com" method="POST">
-          <input type="hidden" name="_subject" value="GymOS Demo Request" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input required name="name" placeholder="Your name" />
-          <input required name="gym_name" placeholder="Gym name" />
-          <input required name="city" placeholder="City" />
-          <input required name="entrances" placeholder="Number of entrances" />
-          <input required name="demo_time" placeholder="Preferred demo time" />
-          <button class="btn btn-primary" type="submit">Book live demo</button>
-        </form>
-        <p class="direct">
-          Direct email: <a href="mailto:info@yniidi.com">info@yniidi.com</a><br />
-          Website: <a href="https://gymos.yniidi.com">gymos.yniidi.com</a>
-        </p>
+      <section class="shell">
+        <div class="cta-band">
+          <p class="eyebrow">Book a demo</p>
+          <h2>See it running on a real gym before you decide.</h2>
+          <div class="actions">
+            <a class="btn btn-primary" href="./contact/">Book a live demo</a>
+            <a class="btn btn-secondary" href="./pricing/">See pricing</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="shell footer">
-      YNIIDI GymOS · A YNIIDI product · <a href="https://yniidi.com">yniidi.com</a> ·
-      <a href="https://gymos.yniidi.com">gymos.yniidi.com</a> · © 2026 YNIIDI
+    <footer class="site-footer">
+      <div class="shell">
+        <p>YNIIDI GymOS · A YNIIDI product</p>
+        <p>
+          <a href="https://yniidi.com">yniidi.com</a> ·
+          <a href="https://gymos.yniidi.com">gymos.yniidi.com</a> · © 2026 YNIIDI. All rights reserved.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
