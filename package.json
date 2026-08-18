@@ -1,0 +1,11 @@
+{
+  "name": "gym-os-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture-screenshots": "node scripts/capture-screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

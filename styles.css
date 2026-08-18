@@ -477,6 +477,50 @@ a {
   text-decoration: none;
 }
 
+.screenshot {
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 32px rgb(13 43 31 / 0.08);
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.screenshot figcaption {
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  color: #4f675d;
+  border-top: 1px solid var(--line);
+  background: white;
+}
+
+.screenshot-stack {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.proof-strip {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.proof-strip .proof-item {
+  padding: 0.85rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
   .hero-grid {
     grid-template-columns: 1.05fr 0.95fr;
